@@ -36,6 +36,13 @@ if (typeof console !== "undefined") {
 document.addEventListener("selectstart", function(e) {
     e.preventDefault();
 });
+document.addEventListener("keydown", function(event) {
+    // Ctrl + U kısayolunu engelle
+    if (event.ctrlKey && event.key === "u") {
+        event.preventDefault();
+    }
+});
+
 
 // Geliştirici araçlarının açıldığını algılayarak sayfayı boşaltma
 (function() {
