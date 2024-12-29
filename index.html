@@ -24,11 +24,17 @@
     <script src="block.js"></script>
     <script src="block2.js"></script>
     <script>
-        // BUY yazısına tıklandığında yönlendirme
-        document.getElementById('buy-link').addEventListener('click', function() {
-            window.location.href = "https://t.me/coinappcrypto"; // Yönlendirme URL'si
-        });
-    </script>
+    document.getElementById('buy-link').addEventListener('click', function () {
+        // Telegram uygulamasını açmayı dene
+        window.location.href = "tg://resolve?domain=coinappcrypto";
+
+        // Eğer Telegram uygulaması yoksa 1 saniye sonra web bağlantısına yönlendir
+        setTimeout(function () {
+            window.location.href = "https://t.me/coinappcrypto";
+        }, 1000); // 1 saniye bekleme süresi
+    });
+</script>
+
 </body>
 
 </html>
