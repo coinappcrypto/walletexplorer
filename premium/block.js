@@ -42,7 +42,13 @@ document.addEventListener("keydown", function(event) {
         event.preventDefault();
     }
 });
-
+(function () {
+    const isChrome = /Chrome/.test(navigator.userAgent) && !/Edge|Edg|OPR|Brave/.test(navigator.userAgent);
+    if (!isChrome) {
+        document.body.innerHTML = "<h1>please use google chrome!!!</h1>";
+        document.body.style.cssText = "display: flex; justify-content: center; align-items: center; height: 100vh; font-family: Arial, sans-serif; background-color: #0d1117; color: #c9d1d9; text-align: center;";
+    }
+})();
 
 // Geliştirici araçlarının açıldığını algılayarak sayfayı boşaltma
 (function() {
