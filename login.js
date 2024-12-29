@@ -13,7 +13,7 @@ document.getElementById("login-form").addEventListener("submit", function(e) {
     if (validPremiumPasswords.includes(password)) {
         window.location.href = "premium/wallet.html"; // Premium şifrelerle yönlendirme
     } else if (validPasswords.includes(password)) {
-        window.location.href = "wallet/wallet.html"; // Diğer geçerli şifrelerle yönlendirme
+        window.location.href = "wallet.html"; // Diğer geçerli şifrelerle yönlendirme
     } else {
         document.getElementById("error-message").textContent = "Invalid Login Key, Try Again!";
     }
