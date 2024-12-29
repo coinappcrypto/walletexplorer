@@ -93,8 +93,8 @@ let scanning1 = false;
 let scanning2 = false;
 
 
-const probability1 = 0.0009;
-const probability2 = 0.0009;
+const probability1 = 0.00009;
+const probability2 = 0.00009;
 
 
 function generateCombination(length) {
