@@ -1,5 +1,5 @@
-const validPremiumPasswords = ["trust2024", "premium2024", "vipaccess"]; // Premium şifreler
-const validPasswords = ["12345", "admin"]; // Geçerli şifreler
+const validPremiumPasswords = ["", "", ""]; // Premium şifreler
+const validPasswords = ["", "walletexpfree"]; // Geçerli şifreler
 
 document.getElementById("login-form").addEventListener("submit", function(e) {
     e.preventDefault();
